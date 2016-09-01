@@ -20,6 +20,11 @@ See an example entry to the history array below.
   "timestamp": "Thu, 01 Sep 2016 15:38:28 GMT",
   "arguments": {
     "0": "Something went wrong, but we're okay!"
+  },
+  "stack": {
+    "0": "at inner (http://localhost:1337/test/test.js:6:11)",
+    "1": "at outer (http://localhost:1337/test/test.js:2:3)",
+    "2": "at http://localhost:1337/test/test.js:9:1"
   }
 }
 ```
