@@ -70,13 +70,11 @@ console._collect = function(type, args) {
   var stack = false;
   try { throw Error(""); } catch(error) {
 
-    // The first four lines are not relevant to us, so we filter those out.
-    //
-    // However I haven't tested this cross-browser yet, other browsers
-    // may generate different error stacks, I'm not sure.
+    // The lines containing 'console-history.js' are not relevant to us.
     var stackParts = error.stack.split("\n");
     var stack = [];
-    for (var i = 4; i < stackParts.length; i++) {
+    for (var i = 0; i < stackParts.length; i++) {
+      if (stackParts[i].indexOf("console-history.js") > -1) continue;
       stack.push(stackParts[i].trim());
     }
 
