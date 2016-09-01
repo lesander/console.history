@@ -64,7 +64,25 @@ console._collect = function(type, args) {
   // the origial console function :)
   console["_"+type].apply(console, args);
 
+  // Get stack trace information. By throwing an error, we get access to
+  // a stack trace. We then go up in the trace tree and filter out
+  // irrelevant information.
+  var stack = false;
+  try { throw Error(""); } catch(error) {
+
+    // The first four lines are not relevant to us, so we filter those out.
+    //
+    // However I haven't tested this cross-browser yet, other browsers
+    // may generate different error stacks, I'm not sure.
+    var stackParts = error.stack.split("\n");
+    var stack = [];
+    for (var i = 4; i < stackParts.length; i++) {
+      stack.push(stackParts[i].trim());
+    }
+
+  }
+
   // Add the log to our history.
-  console.history.push({ "type": type, "timestamp": time, "arguments": args });
+  console.history.push({type: type, timestamp: time, arguments: args, stack: stack});
 
 }
