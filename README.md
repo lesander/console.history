@@ -9,6 +9,11 @@ console function gets called. All calls to `console.log`, `console.info`,
 `console.warn`, `console.error` and `console.debug` will be intercepted and
 stored after that. Including every parameter passed to those functions.
 
+You can also use GitHub's CDN to get the latest version directly in your browser:
+```html
+<script src="https://git.io/console-history.min.js"></script>
+```
+
 Every saved console log is stored locally in the array `console.history`.
 A page reload will erase all history, it is not permanently stored. You could use
 `localStorage` or `sessionStorage` for that.
@@ -38,10 +43,17 @@ understand, see `console-history.js` with in-line comments explaining the code [
 If you'd like to contribute to console.history, or file a bug or feature request,
 please head over to the issue tracker or open a pull request.
 
+Testing is as easy as running [`jekyll serve`](https://jekyllrb.com) in the project's directory,
+navigating to `localhost:4000/test` in your browser and opening [DevTools](https://developer.chrome.com/devtools).
+```shell
+git clone https://github.com/lesander/console-history.git
+cd console-history
+jekyll serve
+```
 
 ### License
-This software is open-sourced under the MIT License (see the LICENSE file for
-the full license). So within some limits, you can do with the code whatever
+This software is open-sourced under the MIT License ([see the LICENSE file for
+the full license](/LICENSE)). So within some limits, you can do with the code whatever
 you want. However, if you like and/or want to re-use it, I'd really appreciate
 a reference to this project page.
 
