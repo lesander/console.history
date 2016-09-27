@@ -1,3 +1,5 @@
+#/usr/bin/env/sh
+set -e
 
 # Run through JS Hint.
 echo "[*] Running JS Hint on console-history.js"
