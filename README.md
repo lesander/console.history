@@ -1,4 +1,4 @@
-# console.history
+# :scroll: console.history
 A very small library to store all console logs in `console.history`.
 
 [Download v1.2.0](https://github.com/lesander/console-history/releases/latest)
