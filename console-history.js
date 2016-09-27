@@ -12,9 +12,9 @@
 
 /* Alert all watching developers that we are intercepting the
    original console log functions. */
-console.log("** All console logging functions on this page are intercepted and \
-locally stored at `console.history` **\nCall the original, un-modified, log \
-functions with `console._log`, `console._warn` and so on.");
+console.log("%s** All console logging functions on this page are intercepted and \
+locally stored at `console.history` **\n%sCall the original, un-modified, log \
+functions with `console._log`, `console._warn` and so on.", 'font-weight: bold; color: red;', 'color: black;');
 
 /* Store the original log functions. */
 console._log = console.log;
