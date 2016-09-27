@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+  "scripts": {
+    "test": "./node_modules/jshint/bin/jshint console-history.js"
+  }
+}
