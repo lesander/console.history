@@ -3,7 +3,7 @@ set -e
 
 # Run through JS Hint.
 echo "[*] Running JS Hint on console-history.js"
-./node_modules/jshint/bin/jshint --shadow=true --expr console-history.js
+./node_modules/jshint/bin/jshint console-history.js
 
 # Check for runtime errors.
 echo "[*] Running console-history.js"
