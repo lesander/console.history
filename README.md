@@ -9,10 +9,13 @@ console function gets called. All calls to `console.log`, `console.info`,
 `console.warn`, `console.error` and `console.debug` will be intercepted and
 stored after that. Including every parameter passed to those functions.
 
-You can also use GitHub's CDN to get the latest version directly in your browser:
+### Getting Started
+You can [download the latest release](https://github.com/lesander/console-history/releases/latest)
+on GitHub, or use GitHub's CDN to get the latest version directly in your browser:
 ```html
 <script src="https://git.io/console-history.min.js"></script>
 ```
+
 
 Every saved console log is stored locally in the array `console.history`.
 A page reload will erase all history, it is not permanently stored. You could use
