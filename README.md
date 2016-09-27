@@ -1,7 +1,7 @@
 # console.history
 A very small library to store all console logs in `console.history`.
 
-[Download v1.1.0](https://github.com/lesander/console-history/releases/latest)
+[Download v1.2.0](https://github.com/lesander/console-history/releases/latest)
 
 ### Usage
 Include `console-history.js` or `console-history.min.js` in your page before any
