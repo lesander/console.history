@@ -27,11 +27,11 @@ console._debug = console.debug;
 console.history = [];
 
 /* Redirect all calls to the collector. */
-console.log = function() { return console._collect("log", arguments); }
-console.info = function() { return console._collect("info", arguments); }
-console.warn = function() { return console._collect("warn", arguments); }
-console.error = function() { return console._collect("error", arguments); }
-console.debug = function() { return console._collect("debug", arguments); }
+console.log = function() { return console._collect("log", arguments); };
+console.info = function() { return console._collect("info", arguments); };
+console.warn = function() { return console._collect("warn", arguments); };
+console.error = function() { return console._collect("error", arguments); };
+console.debug = function() { return console._collect("debug", arguments); };
 
 /* Define the main log catcher. */
 console._collect = function(type, args) {
@@ -86,4 +86,4 @@ console._collect = function(type, args) {
   // Add the log to our history.
   console.history.push({type: type, timestamp: time, arguments: args, stack: stack});
 
-}
+};
