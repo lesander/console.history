@@ -6,7 +6,7 @@
  *
  * Written by Sander Laarhoven <sander@laarhoven.org>
  * For Doorbell.io <3
- * https://github.com/lesander/console-history
+ * https://git.io/console
  * https://sander.tech - https://doorbell.io
  */
 
