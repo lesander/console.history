@@ -2,7 +2,7 @@
 :scroll:
 A very small library to store all console logs in `console.history`.
 
-[Download v1.2.0](https://github.com/lesander/console-history/releases/latest)
+[Download v1.3.0](https://github.com/lesander/console-history/releases/latest)
 
 ### Usage
 Include `console-history.js` or `console-history.min.js` in your page before any
@@ -14,7 +14,7 @@ stored after that. Including every parameter passed to those functions.
 You can [download the latest release](https://github.com/lesander/console-history/releases/latest)
 on GitHub, or use RawGit's CDN to get the latest version directly in your browser:
 ```html
-<script src="https://cdn.rawgit.com/lesander/console-history/v1.2.0/console-history.min.js"></script>
+<script src="https://cdn.rawgit.com/lesander/console-history/v1.3.0/console-history.min.js"></script>
 ```
 
 
