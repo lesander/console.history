@@ -1,8 +1,10 @@
-# console.history [![Build Status](https://travis-ci.org/lesander/console-history.svg?branch=master)](https://travis-ci.org/lesander/console-history)
-:scroll:
-A very small library to store all console logs in `console.history`.
+# console.history
 
-[Download v1.3.0](https://github.com/lesander/console-history/releases/latest)
+[![Build Status](https://travis-ci.org/lesander/console-history.svg?branch=master)](https://travis-ci.org/lesander/console-history)
+[![GitHub release](https://img.shields.io/github/release/lesander/console-history.svg?maxAge=2592000)]()
+
+
+A very small library to store all console logs in `console.history`.
 
 ### Usage
 Include `console-history.js` or `console-history.min.js` in your page before any
