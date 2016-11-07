@@ -1,4 +1,5 @@
 {
+  "version": "1.4.0",
   "devDependencies": {
     "jshint": "^2.6.0"
   },
