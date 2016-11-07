@@ -37,11 +37,21 @@ console._debug = console.debug;
 console.history = [];
 
 /* Redirect all calls to the collector. */
-console.log = function() { return console._collect("log", arguments); };
-console.info = function() { return console._collect("info", arguments); };
-console.warn = function() { return console._collect("warn", arguments); };
-console.error = function() { return console._collect("error", arguments); };
-console.debug = function() { return console._collect("debug", arguments); };
+console.log = function() { return console._intercept("log", arguments); };
+console.info = function() { return console._intercept("info", arguments); };
+console.warn = function() { return console._intercept("warn", arguments); };
+console.error = function() { return console._intercept("error", arguments); };
+console.debug = function() { return console._intercept("debug", arguments); };
+
+/* Give the developer the ability to intercept the message before letting
+   console-history access it. */
+console._intercept = function (type, args) {
+
+  // Your own code can go here, but the preferred method is to override this
+  // function in your own script, and add the line below to the end or
+  // begin of your own 'console._intercept' function.
+  console._collect(type, args);
+};
 
 /* Define the main log catcher. */
 console._collect = function(type, args) {
