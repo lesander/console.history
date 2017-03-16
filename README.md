@@ -1,5 +1,7 @@
 # console.history
+[![npm](https://img.shields.io/npm/v/console.history.svg)]()
 [![GitHub release](https://img.shields.io/github/release/lesander/console.history.svg?maxAge=2592000)]()
+[![npm](https://img.shields.io/npm/dt/console.history.svg)]()
 [![Code Climate](https://codeclimate.com/github/lesander/console.history/badges/gpa.svg)](https://codeclimate.com/github/lesander/console.history)
 [![BCH compliancy](https://bettercodehub.com/edge/badge/lesander/console.history)](https://bettercodehub.com)
 [![Build Status](https://travis-ci.org/lesander/console.history.svg?branch=master)](https://travis-ci.org/lesander/console.history)
