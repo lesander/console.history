@@ -2,8 +2,8 @@
 set -e
 
 # Run through JS Hint.
-echo "[*] Running JS Hint on console-history.js"
-./node_modules/jshint/bin/jshint console-history.js
+echo "[*] Running StandardJS on console-history.js"
+standard console-history.js
 
 # Check for runtime errors.
 echo "[*] Running console-history.js"

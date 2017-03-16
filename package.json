@@ -1,7 +1,11 @@
 {
-  "version": "1.4.0",
+  "name": "console.history",
+  "version": "1.5.0",
+  "author": "Sander Laarhoven",
+  "repository": "https://git.io/console",
+  "license": "MIT",
   "devDependencies": {
-    "jshint": "^2.6.0"
+    "standard": "^9.0.1"
   },
   "scripts": {
     "test": "test/ci.sh"
