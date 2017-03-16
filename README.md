@@ -18,7 +18,7 @@ This library works in almost all browsers and on any NodeJS server.
 #### Browser
 You can [download the latest release](https://github.com/lesander/console.history/releases/latest) on GitHub, or use RawGit's CDN to get the latest version directly in your browser:
 ```html
-<script src="https://cdn.rawgit.com/lesander/console.history/v1.4.0/console-history.min.js"></script>
+<script src="https://cdn.rawgit.com/lesander/console.history/v1.5.0/console-history.min.js"></script>
 ```
 See an example entry to the history array below. This example is from the [`test/test.js`](test/test.js) file.
 ```json
