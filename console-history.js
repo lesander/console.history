@@ -74,11 +74,11 @@ console._collect = function (type, args) {
 
   // Make sure the 'type' parameter is set. If no type is set, we fall
   // back to the default log type.
-  if (!type) { type = 'log' }
+  if (!type) type = 'log'
 
   // To ensure we behave like the original console log functions, we do not
   // output anything if no arguments are provided.
-  if (!args || args.length === 0) { return }
+  if (!args || args.length === 0) return
 
   // Act normal, and just pass all original arguments to
   // the origial console function :)
