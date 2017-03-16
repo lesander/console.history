@@ -10,6 +10,8 @@
  * https://sander.tech - https://doorbell.io
  */
 
+'use strict'
+
 /* Allow only one instance of console-history.js */
 if (typeof console.history !== 'undefined') {
   throw new Error('Only one instance of console-history.js can run at a time.')
