@@ -72,7 +72,7 @@ console._collect = function (type, args) {
 
   // Make sure the 'type' parameter is set. If no type is set, we fall
   // back to the default log type.
-  if (!type) { var type = 'log' }
+  if (!type) { type = 'log' }
 
   // To ensure we behave like the original console log functions, we do not
   // output anything if no arguments are provided.
@@ -89,7 +89,7 @@ console._collect = function (type, args) {
   try { throw Error('') } catch (error) {
     // The lines containing 'console-history.js' are not relevant to us.
     var stackParts = error.stack.split('\n')
-    var stack = []
+    stack = []
     for (var i = 0; i < stackParts.length; i++) {
       if (stackParts[i].indexOf('console-history.js') > -1 ||
       stackParts[i].indexOf('console-history.min.js') > -1) {
