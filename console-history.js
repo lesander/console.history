@@ -17,17 +17,6 @@ if (typeof console.history !== 'undefined') {
   throw new Error('Only one instance of console-history.js can run at a time.')
 }
 
-/* Alert all watching developers that we are intercepting the
-   original console log functions. */
-if (typeof ConsoleHistoryHideMessage === 'undefined') {
-  console.log('%cAll console logging functions on this page are intercepted and ' +
-  'locally stored at \'console.history\'.', 'font-weight: bold; color: red;')
-  console.log('Call the original, un-modified, log ' +
-  'functions with \'console._log()\', \'console._warn()\' and so on.')
-  console.log('%cFor more information, see the console.history project on GitHub: ' +
-  'https://git.io/console', 'font-style: italic;')
-}
-
 /* Store the original log functions. */
 console._log = console.log
 console._info = console.info
