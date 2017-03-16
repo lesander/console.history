@@ -40,6 +40,7 @@ console._intercept = function (type, args) {
   // Your own code can go here, but the preferred method is to override this
   // function in your own script, and add the line below to the end or
   // begin of your own 'console._intercept' function.
+  // REMEMBER: Use only underscore console commands inside _intercept!
   console._collect(type, args)
 }
 
