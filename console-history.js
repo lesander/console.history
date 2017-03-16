@@ -67,7 +67,6 @@ console._collect = function (type, args) {
   // The arguments of the original console.log functions are collected above,
   // and passed to this function as a variable 'args', since 'arguments' is
   // reserved for the current function.
-  args; arguments
 
   // Collect the timestamp of the console log.
   var time = new Date().toUTCString()
