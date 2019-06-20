@@ -92,5 +92,5 @@ console._collect = function (type, args) {
   }
 
   // Add the log to our history.
-  console.history.push({type: type, timestamp: time, arguments: args, stack: stack})
+  console.history.push({ type: type, timestamp: time, arguments: args, stack: stack })
 }
