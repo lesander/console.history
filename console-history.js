@@ -4,10 +4,10 @@
  *
  * Licensed under the MIT License.
  *
- * Written by Sander Laarhoven <sander@laarhoven.org>
+ * Written by Sander Laarhoven <github.com/lesander>
  * For Doorbell.io <3
  * https://git.io/console
- * https://sander.tech - https://doorbell.io
+ * https://doorbell.io
  */
 
 'use strict'
