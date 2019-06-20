@@ -1,5 +1,5 @@
 /**
- * Console History v1.5.0
+ * Console History v1.5.1
  * console-history.js
  *
  * Licensed under the MIT License.
