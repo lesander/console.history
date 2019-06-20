@@ -1,13 +1,13 @@
 /**
- * Console History v1.5.0
+ * Console History v1.5.1
  * console-history.js
  *
  * Licensed under the MIT License.
  *
- * Written by Sander Laarhoven <sander@laarhoven.org>
+ * Written by Sander Laarhoven <github.com/lesander>
  * For Doorbell.io <3
  * https://git.io/console
- * https://sander.tech - https://doorbell.io
+ * https://doorbell.io
  */
 
 'use strict'
@@ -92,5 +92,5 @@ console._collect = function (type, args) {
   }
 
   // Add the log to our history.
-  console.history.push({type: type, timestamp: time, arguments: args, stack: stack})
+  console.history.push({ type: type, timestamp: time, arguments: args, stack: stack })
 }
