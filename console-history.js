@@ -3,11 +3,7 @@
  * console-history.js
  *
  * Licensed under the MIT License.
- *
- * Written by Sander Laarhoven <github.com/lesander>
- * For Doorbell.io <3
  * https://git.io/console
- * https://doorbell.io
  */
 
 'use strict'
