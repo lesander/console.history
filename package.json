@@ -1,7 +1,6 @@
 {
   "name": "console.history",
   "version": "1.5.1",
-  "author": "Sander Laarhoven",
   "repository": "https://git.io/console",
   "license": "MIT",
   "devDependencies": {
